@@ -1,4 +1,7 @@
 package com.java.business;
+
+import com.java.pojo.User;
+
 /**
  * 
  * 只有一个抽象方法的接口，才是函数式接口
@@ -10,5 +13,5 @@ package com.java.business;
  */
 @FunctionalInterface
 public interface UserMapper {
-	int insert();
+	void insert(User user);
 }
