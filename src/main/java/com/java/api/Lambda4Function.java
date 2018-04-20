@@ -3,7 +3,7 @@ package com.java.api;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-public class LambdaDemo4Function {
+public class Lambda4Function {
 
 	public static void main(String[] args) {
 		// 一个输入，一个输出

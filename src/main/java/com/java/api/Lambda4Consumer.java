@@ -3,7 +3,7 @@ package com.java.api;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-public class LambdaDemo4Consumer {
+public class Lambda4Consumer {
 
 	public static void main(String[] args) {
 		Consumer<String> lambda4Consumer = input -> System.out.println("消费一个输入:" + input);

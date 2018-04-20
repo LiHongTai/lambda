@@ -3,22 +3,22 @@ package com.java.api;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public class LambdaDemo4InstantMethodReference {
+public class Lambda4InstantMethodReference {
 
 	public static void main(String[] args) {
 		//沒有输入，只有输出
-		Supplier<String> string4Supplier = () -> new LambdaDemo4InstantMethodReference().get();
+		Supplier<String> string4Supplier = () -> new Lambda4InstantMethodReference().get();
 		System.out.println("一般方式Lambda表达式：" + string4Supplier.get());
 
 		// 静态方法的引用实现
-		Supplier<String> stringSupplier4InstantMehtodReference = new LambdaDemo4InstantMethodReference()::get;
+		Supplier<String> stringSupplier4InstantMehtodReference = new Lambda4InstantMethodReference()::get;
 		System.out.println("实例方法的引用来实现Lambda表达式:" + stringSupplier4InstantMehtodReference.get());
 		
 		//只有输入，没有输出
-		Consumer<String> string4Consumer = string -> new LambdaDemo4InstantMethodReference().set(string);
+		Consumer<String> string4Consumer = string -> new Lambda4InstantMethodReference().set(string);
 		string4Consumer.accept("一般方式Lambda表达式实现");
 		
-		Consumer<String> stringConsumer4InstantMehtodReference = new LambdaDemo4InstantMethodReference()::set;
+		Consumer<String> stringConsumer4InstantMehtodReference = new Lambda4InstantMethodReference()::set;
 		stringConsumer4InstantMehtodReference.accept("实例方法引用方法Lambda表达式实现");
 		
 	}
