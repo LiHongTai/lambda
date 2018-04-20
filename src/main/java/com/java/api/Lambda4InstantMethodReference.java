@@ -3,6 +3,11 @@ package com.java.api;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
+/**
+ * 实例方法的引用
+ * 		inst::instMethod 	(args) -> inst.staticMethod(args)
+ * @author Roger.Li
+ */
 public class Lambda4InstantMethodReference {
 
 	public static void main(String[] args) {

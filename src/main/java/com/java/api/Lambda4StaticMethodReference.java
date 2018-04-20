@@ -3,6 +3,11 @@ package com.java.api;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
+/**
+ * 静态方法的引用
+ * 		类名::staticMethod  (args) -> 类名.staticMethod(args)
+ * @author Roger.Li
+ */
 public class Lambda4StaticMethodReference {
 
 	public static void main(String[] args) {
