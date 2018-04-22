@@ -15,5 +15,8 @@ public class User {
 
 	private Integer age;
 
+	private String sex;
+	
 	private LocalDate birthDate;
+	
 }

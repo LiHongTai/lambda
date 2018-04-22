@@ -2,7 +2,6 @@ package com.java.stream.utils;
 
 import java.util.List;
 import java.util.function.Supplier;
-import java.util.function.UnaryOperator;
 import java.util.stream.Stream;
 
 public class StreamUtil {
@@ -12,7 +11,7 @@ public class StreamUtil {
 	}
 	
 	public static <T> Stream<T> listToStream(List<T> list){
-		return (Stream<T>) Stream.of(list);
+		return list.stream();
 	}
 	
 	public static <T> Stream<T> generate(T arg){
